@@ -36,7 +36,7 @@ def tracking(input_video, output_video):
         return
 
     # 创建背景减除器
-    fgbg = cv2.createBackgroundSubtractorMOG2(history=500, varThreshold=45, detectShadows=False)
+    fgbg = cv2.createBackgroundSubtractorMOG2(history=500, varThreshold=42, detectShadows=False)
 
     # 获取视频的帧率和尺寸
     fps = int(cap.get(cv2.CAP_PROP_FPS))
@@ -76,6 +76,7 @@ def tracking(input_video, output_video):
     frame_count = 0
     bg_dir=output_image_folder+'/bg'
     inflate_dir=output_image_folder+'/inflate'
+ 
     while True:
         ret, frame = cap.read()
         if not ret:#读取下一帧失败
@@ -117,10 +118,11 @@ def tracking(input_video, output_video):
 
         # 取前景物体的中心点
         xylist = []
+        
         # 可视化每个前景物体
         for contour in contours:
 
-            if cv2.contourArea(contour) > 70 and cv2.contourArea(contour)<490*450:  # 过滤掉太小的轮廓
+            if cv2.contourArea(contour) > 60 and cv2.contourArea(contour)<490*450:  # 过滤掉太小的轮廓
 
                 x, y, w, h = cv2.boundingRect(contour)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 1)
@@ -142,7 +144,7 @@ def tracking(input_video, output_video):
                 # 
                 for i, trackitem in enumerate(tracklist):
                     predict = (trackitem[0][0] + trackitem[1][0], trackitem[0][1] + trackitem[1][1])
-                    if math.dist(xy, predict) < min(50, dis) :
+                    if math.dist(xy, predict) < min(45, dis) :
                         dis = min(dis, math.dist(xy, predict))
                         # logger.info(f"帧：i :{i}, dis: {dis},trackitem: {trackitem} xy: {xy}")
                         closest = i        
@@ -150,26 +152,34 @@ def tracking(input_video, output_video):
                         # print(f"帧：i :{i}, dis: {dis},trackitem: {trackitem} xy: {xy}")
                 if dis == 1000:
                     tracklist.append((xy, (0, 0), 1))   
+                    logger.info(f"insert_index: {len(tracklist)-1}")
                     # logger.info(f"新积木出现第{frame_count}帧")
+                    
                     # print(f"新积木：{xy}")
                 else:
                     motion = (xy[0] - tracklist[closest][0][0], xy[1] - tracklist[closest][0][1])
                     tracklist[closest] = (xy, motion, tracklist[closest][2] + 1)
                     cv2.circle(frame, (round(xy[0]), round(xy[1])), 3, trackcolor[closest % len(trackcolor)], 2)
-                # logger.info(f"帧：{frame_count}  新增跟踪目标: ({xy[0]}, {xy[1]}) 颜色：{trackcolor[closest % len(trackcolor)]} dis: {dis}")
+                # logger.info(f"帧：{frame_count}  新增跟踪目标: ({xy[0]}, {xy[1]}) 颜色：{trackcolor[closest % len(trackcolor)]} dis: {dis},trackitem:{trackitem[2]}")
         # 检查是否需要保存积木图片
         for i, trackitem in enumerate(tracklist):
-            if trackitem[2] > 5 and i not in saved_tracks:
+  
+            if trackitem[2] > 5 and i not in saved_tracks :  
+                if trackitem[0][0]>350:
+                    # print(f"帧：{frame_count}  移除跟踪目标: ({trackitem[0][0]}, {trackitem[0][1]}) 颜色：{trackcolor[i % len(trackcolor)]} dis: {trackitem[2]}")
+                    continue
                 x, y = int(round(trackitem[0][0])), int(round(trackitem[0][1]))
                 # 截取积木区域（50x50）
-                x1 = max(0, x - 25)
-                y1 = max(0, y - 25)
-                x2 = min(frame.shape[1], x + 25)
-                y2 = min(frame.shape[0], y + 25)
+                x1 = max(0, x - 30)
+                y1 = max(0, y - 30)
+                x2 = min(frame.shape[1], x + 30)
+                y2 = min(frame.shape[0], y + 30)
                 block_image = frame[y1:y2, x1:x2]
                 image_path = os.path.join(output_image_folder, f"track_{i}_frame_{frame_count}.jpg")
                 cv2.imwrite(image_path, block_image)
                 saved_tracks.add(i)
+                # logger.info(f"trackitem:{trackitem}")
+               
         cv2.imshow('Frame', frame)
         frame_count += 1  # 帧计数器递增
         cv2.imshow('Foreground Mask', fgmask)
@@ -181,7 +191,7 @@ def tracking(input_video, output_video):
     # 统计积木数量
     cnt = 0
     for trackitem in tracklist:
-        if trackitem[2] > 5:
+        if trackitem[2] > 5 and trackitem[0][0]<350:
             cnt += 1
 
     # 释放资源
