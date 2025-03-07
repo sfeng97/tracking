@@ -1,29 +1,324 @@
-2025-03-06 22:23:23,450 - INFO - Found 9 video files to process
-2025-03-06 22:23:23,451 - INFO - Attempting to open video: ./tracking/20250304_10_tracking.mp4
-2025-03-06 22:23:23,454 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:23,989 - INFO - Extracted 304 frames from 20250304_10_tracking.mp4 to ./image/20250304_10_tracking
-2025-03-06 22:23:23,990 - INFO - Attempting to open video: ./tracking/20250304_1_tracking.mp4
-2025-03-06 22:23:23,993 - INFO - Video info - Frames: 280, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:24,539 - INFO - Extracted 280 frames from 20250304_1_tracking.mp4 to ./image/20250304_1_tracking
-2025-03-06 22:23:24,540 - INFO - Attempting to open video: ./tracking/20250304_3_tracking.mp4
-2025-03-06 22:23:24,542 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:25,080 - INFO - Extracted 304 frames from 20250304_3_tracking.mp4 to ./image/20250304_3_tracking
-2025-03-06 22:23:25,081 - INFO - Attempting to open video: ./tracking/20250304_5_tracking.mp4
-2025-03-06 22:23:25,084 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:25,752 - INFO - Extracted 305 frames from 20250304_5_tracking.mp4 to ./image/20250304_5_tracking
-2025-03-06 22:23:25,753 - INFO - Attempting to open video: ./tracking/20250304_9_tracking.mp4
-2025-03-06 22:23:25,756 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:26,297 - INFO - Extracted 305 frames from 20250304_9_tracking.mp4 to ./image/20250304_9_tracking
-2025-03-06 22:23:26,297 - INFO - Attempting to open video: ./tracking/20250304_7_tracking.mp4
-2025-03-06 22:23:26,299 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:26,842 - INFO - Extracted 305 frames from 20250304_7_tracking.mp4 to ./image/20250304_7_tracking
-2025-03-06 22:23:26,842 - INFO - Attempting to open video: ./tracking/20250304_6_tracking.mp4
-2025-03-06 22:23:26,844 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:27,367 - INFO - Extracted 305 frames from 20250304_6_tracking.mp4 to ./image/20250304_6_tracking
-2025-03-06 22:23:27,368 - INFO - Attempting to open video: ./tracking/20250304_4_tracking.mp4
-2025-03-06 22:23:27,369 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:27,905 - INFO - Extracted 304 frames from 20250304_4_tracking.mp4 to ./image/20250304_4_tracking
-2025-03-06 22:23:27,906 - INFO - Attempting to open video: ./tracking/20250304_2_tracking.mp4
-2025-03-06 22:23:27,907 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
-2025-03-06 22:23:28,507 - INFO - Extracted 304 frames from 20250304_2_tracking.mp4 to ./image/20250304_2_tracking
-2025-03-06 22:23:28,508 - INFO - All videos processed successfully!
+2025-03-07 11:52:24,147 - INFO - Found 9 video files to process
+2025-03-07 11:52:24,148 - INFO - Attempting to open video: ./tracking/20250304_10_tracking.mp4
+2025-03-07 11:52:24,151 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:24,731 - INFO - Extracted 304 frames from 20250304_10_tracking.mp4 to ./image/20250304_10_tracking
+2025-03-07 11:52:24,732 - INFO - Attempting to open video: ./tracking/20250304_1_tracking.mp4
+2025-03-07 11:52:24,734 - INFO - Video info - Frames: 280, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:25,266 - INFO - Extracted 280 frames from 20250304_1_tracking.mp4 to ./image/20250304_1_tracking
+2025-03-07 11:52:25,267 - INFO - Attempting to open video: ./tracking/20250304_3_tracking.mp4
+2025-03-07 11:52:25,268 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:25,794 - INFO - Extracted 304 frames from 20250304_3_tracking.mp4 to ./image/20250304_3_tracking
+2025-03-07 11:52:25,794 - INFO - Attempting to open video: ./tracking/20250304_5_tracking.mp4
+2025-03-07 11:52:25,796 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:26,407 - INFO - Extracted 305 frames from 20250304_5_tracking.mp4 to ./image/20250304_5_tracking
+2025-03-07 11:52:26,407 - INFO - Attempting to open video: ./tracking/20250304_9_tracking.mp4
+2025-03-07 11:52:26,409 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:27,001 - INFO - Extracted 305 frames from 20250304_9_tracking.mp4 to ./image/20250304_9_tracking
+2025-03-07 11:52:27,002 - INFO - Attempting to open video: ./tracking/20250304_7_tracking.mp4
+2025-03-07 11:52:27,003 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:27,541 - INFO - Extracted 305 frames from 20250304_7_tracking.mp4 to ./image/20250304_7_tracking
+2025-03-07 11:52:27,542 - INFO - Attempting to open video: ./tracking/20250304_6_tracking.mp4
+2025-03-07 11:52:27,543 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:28,173 - INFO - Extracted 305 frames from 20250304_6_tracking.mp4 to ./image/20250304_6_tracking
+2025-03-07 11:52:28,173 - INFO - Attempting to open video: ./tracking/20250304_4_tracking.mp4
+2025-03-07 11:52:28,175 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:28,717 - INFO - Extracted 304 frames from 20250304_4_tracking.mp4 to ./image/20250304_4_tracking
+2025-03-07 11:52:28,718 - INFO - Attempting to open video: ./tracking/20250304_2_tracking.mp4
+2025-03-07 11:52:28,719 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-07 11:52:29,363 - INFO - Extracted 304 frames from 20250304_2_tracking.mp4 to ./image/20250304_2_tracking
+2025-03-07 11:52:29,364 - INFO - All videos processed successfully!
+2025-03-10 09:06:55,982 - INFO - Found 1 video files to process
+2025-03-10 09:06:55,983 - INFO - Attempting to open video: ./tracking/20250307_11_tracking.mp4
+2025-03-10 09:06:55,985 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:06:56,217 - INFO - Extracted 304 frames from 20250307_11_tracking.mp4 to ./image/20250307_11_tracking
+2025-03-10 09:06:56,217 - INFO - All videos processed successfully!
+2025-03-10 09:11:37,416 - INFO - Found 12 video files to process
+2025-03-10 09:11:37,417 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-10 09:11:37,418 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:37,624 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-10 09:11:37,624 - INFO - Attempting to open video: ./tracking/20250307_47_tracking.mp4
+2025-03-10 09:11:37,624 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:37,802 - INFO - Extracted 305 frames from 20250307_47_tracking.mp4 to ./image/20250307_47_tracking
+2025-03-10 09:11:37,802 - INFO - Attempting to open video: ./tracking/20250307_51_tracking.mp4
+2025-03-10 09:11:37,803 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,001 - INFO - Extracted 304 frames from 20250307_51_tracking.mp4 to ./image/20250307_51_tracking
+2025-03-10 09:11:38,001 - INFO - Attempting to open video: ./tracking/20250307_22_tracking.mp4
+2025-03-10 09:11:38,002 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,185 - INFO - Extracted 304 frames from 20250307_22_tracking.mp4 to ./image/20250307_22_tracking
+2025-03-10 09:11:38,185 - INFO - Attempting to open video: ./tracking/20250307_37_tracking.mp4
+2025-03-10 09:11:38,186 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,358 - INFO - Extracted 304 frames from 20250307_37_tracking.mp4 to ./image/20250307_37_tracking
+2025-03-10 09:11:38,358 - INFO - Attempting to open video: ./tracking/20250307_52_tracking.mp4
+2025-03-10 09:11:38,359 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,547 - INFO - Extracted 305 frames from 20250307_52_tracking.mp4 to ./image/20250307_52_tracking
+2025-03-10 09:11:38,547 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-10 09:11:38,548 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,723 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-10 09:11:38,723 - INFO - Attempting to open video: ./tracking/20250307_43_tracking.mp4
+2025-03-10 09:11:38,724 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:38,896 - INFO - Extracted 305 frames from 20250307_43_tracking.mp4 to ./image/20250307_43_tracking
+2025-03-10 09:11:38,896 - INFO - Attempting to open video: ./tracking/20250307_36_tracking.mp4
+2025-03-10 09:11:38,897 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:39,151 - INFO - Extracted 304 frames from 20250307_36_tracking.mp4 to ./image/20250307_36_tracking
+2025-03-10 09:11:39,151 - INFO - Attempting to open video: ./tracking/20250307_11_tracking.mp4
+2025-03-10 09:11:39,152 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:39,332 - INFO - Extracted 304 frames from 20250307_11_tracking.mp4 to ./image/20250307_11_tracking
+2025-03-10 09:11:39,332 - INFO - Attempting to open video: ./tracking/20250307_35_tracking.mp4
+2025-03-10 09:11:39,333 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:39,507 - INFO - Extracted 305 frames from 20250307_35_tracking.mp4 to ./image/20250307_35_tracking
+2025-03-10 09:11:39,507 - INFO - Attempting to open video: ./tracking/20250307_7_tracking.mp4
+2025-03-10 09:11:39,508 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:11:39,685 - INFO - Extracted 304 frames from 20250307_7_tracking.mp4 to ./image/20250307_7_tracking
+2025-03-10 09:11:39,685 - INFO - All videos processed successfully!
+2025-03-10 09:34:51,986 - INFO - Found 12 video files to process
+2025-03-10 09:34:51,987 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-10 09:34:51,988 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:52,200 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-10 09:34:52,200 - INFO - Attempting to open video: ./tracking/20250307_47_tracking.mp4
+2025-03-10 09:34:52,201 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:52,377 - INFO - Extracted 305 frames from 20250307_47_tracking.mp4 to ./image/20250307_47_tracking
+2025-03-10 09:34:52,377 - INFO - Attempting to open video: ./tracking/20250307_51_tracking.mp4
+2025-03-10 09:34:52,378 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:52,559 - INFO - Extracted 304 frames from 20250307_51_tracking.mp4 to ./image/20250307_51_tracking
+2025-03-10 09:34:52,560 - INFO - Attempting to open video: ./tracking/20250307_22_tracking.mp4
+2025-03-10 09:34:52,560 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:52,739 - INFO - Extracted 304 frames from 20250307_22_tracking.mp4 to ./image/20250307_22_tracking
+2025-03-10 09:34:52,739 - INFO - Attempting to open video: ./tracking/20250307_37_tracking.mp4
+2025-03-10 09:34:52,739 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:52,911 - INFO - Extracted 304 frames from 20250307_37_tracking.mp4 to ./image/20250307_37_tracking
+2025-03-10 09:34:52,911 - INFO - Attempting to open video: ./tracking/20250307_52_tracking.mp4
+2025-03-10 09:34:52,912 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:53,096 - INFO - Extracted 305 frames from 20250307_52_tracking.mp4 to ./image/20250307_52_tracking
+2025-03-10 09:34:53,097 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-10 09:34:53,097 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:53,277 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-10 09:34:53,278 - INFO - Attempting to open video: ./tracking/20250307_43_tracking.mp4
+2025-03-10 09:34:53,278 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:53,456 - INFO - Extracted 305 frames from 20250307_43_tracking.mp4 to ./image/20250307_43_tracking
+2025-03-10 09:34:53,456 - INFO - Attempting to open video: ./tracking/20250307_36_tracking.mp4
+2025-03-10 09:34:53,457 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:53,637 - INFO - Extracted 304 frames from 20250307_36_tracking.mp4 to ./image/20250307_36_tracking
+2025-03-10 09:34:53,637 - INFO - Attempting to open video: ./tracking/20250307_11_tracking.mp4
+2025-03-10 09:34:53,638 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:53,822 - INFO - Extracted 304 frames from 20250307_11_tracking.mp4 to ./image/20250307_11_tracking
+2025-03-10 09:34:53,822 - INFO - Attempting to open video: ./tracking/20250307_35_tracking.mp4
+2025-03-10 09:34:53,823 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:54,005 - INFO - Extracted 305 frames from 20250307_35_tracking.mp4 to ./image/20250307_35_tracking
+2025-03-10 09:34:54,005 - INFO - Attempting to open video: ./tracking/20250307_7_tracking.mp4
+2025-03-10 09:34:54,006 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:34:54,189 - INFO - Extracted 304 frames from 20250307_7_tracking.mp4 to ./image/20250307_7_tracking
+2025-03-10 09:34:54,189 - INFO - All videos processed successfully!
+2025-03-10 09:49:21,303 - INFO - Found 3 video files to process
+2025-03-10 09:49:21,303 - INFO - Attempting to open video: ./tracking/20250307_51_tracking.mp4
+2025-03-10 09:49:21,305 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:49:21,530 - INFO - Extracted 304 frames from 20250307_51_tracking.mp4 to ./image/20250307_51_tracking
+2025-03-10 09:49:21,530 - INFO - Attempting to open video: ./tracking/20250307_22_tracking.mp4
+2025-03-10 09:49:21,531 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:49:21,707 - INFO - Extracted 304 frames from 20250307_22_tracking.mp4 to ./image/20250307_22_tracking
+2025-03-10 09:49:21,707 - INFO - Attempting to open video: ./tracking/20250307_43_tracking.mp4
+2025-03-10 09:49:21,708 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:49:21,884 - INFO - Extracted 305 frames from 20250307_43_tracking.mp4 to ./image/20250307_43_tracking
+2025-03-10 09:49:21,884 - INFO - All videos processed successfully!
+2025-03-10 09:55:50,990 - INFO - Found 52 video files to process
+2025-03-10 09:55:50,991 - INFO - Attempting to open video: ./tracking/20250307_29_tracking.mp4
+2025-03-10 09:55:50,993 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:51,202 - INFO - Extracted 304 frames from 20250307_29_tracking.mp4 to ./image/20250307_29_tracking
+2025-03-10 09:55:51,202 - INFO - Attempting to open video: ./tracking/20250307_26_tracking.mp4
+2025-03-10 09:55:51,202 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:51,402 - INFO - Extracted 304 frames from 20250307_26_tracking.mp4 to ./image/20250307_26_tracking
+2025-03-10 09:55:51,403 - INFO - Attempting to open video: ./tracking/20250307_31_tracking.mp4
+2025-03-10 09:55:51,403 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:51,581 - INFO - Extracted 304 frames from 20250307_31_tracking.mp4 to ./image/20250307_31_tracking
+2025-03-10 09:55:51,581 - INFO - Attempting to open video: ./tracking/20250307_8_tracking.mp4
+2025-03-10 09:55:51,581 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:51,755 - INFO - Extracted 305 frames from 20250307_8_tracking.mp4 to ./image/20250307_8_tracking
+2025-03-10 09:55:51,755 - INFO - Attempting to open video: ./tracking/20250307_16_tracking.mp4
+2025-03-10 09:55:51,756 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:51,929 - INFO - Extracted 304 frames from 20250307_16_tracking.mp4 to ./image/20250307_16_tracking
+2025-03-10 09:55:51,929 - INFO - Attempting to open video: ./tracking/20250307_30_tracking.mp4
+2025-03-10 09:55:51,930 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:52,106 - INFO - Extracted 304 frames from 20250307_30_tracking.mp4 to ./image/20250307_30_tracking
+2025-03-10 09:55:52,106 - INFO - Attempting to open video: ./tracking/20250307_6_tracking.mp4
+2025-03-10 09:55:52,107 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:52,281 - INFO - Extracted 304 frames from 20250307_6_tracking.mp4 to ./image/20250307_6_tracking
+2025-03-10 09:55:52,281 - INFO - Attempting to open video: ./tracking/20250307_38_tracking.mp4
+2025-03-10 09:55:52,281 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:52,448 - INFO - Extracted 304 frames from 20250307_38_tracking.mp4 to ./image/20250307_38_tracking
+2025-03-10 09:55:52,448 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-10 09:55:52,449 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:52,636 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-10 09:55:52,636 - INFO - Attempting to open video: ./tracking/20250307_28_tracking.mp4
+2025-03-10 09:55:52,637 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:52,821 - INFO - Extracted 304 frames from 20250307_28_tracking.mp4 to ./image/20250307_28_tracking
+2025-03-10 09:55:52,821 - INFO - Attempting to open video: ./tracking/20250307_20_tracking.mp4
+2025-03-10 09:55:52,822 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,007 - INFO - Extracted 305 frames from 20250307_20_tracking.mp4 to ./image/20250307_20_tracking
+2025-03-10 09:55:53,007 - INFO - Attempting to open video: ./tracking/20250307_5_tracking.mp4
+2025-03-10 09:55:53,008 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,221 - INFO - Extracted 304 frames from 20250307_5_tracking.mp4 to ./image/20250307_5_tracking
+2025-03-10 09:55:53,221 - INFO - Attempting to open video: ./tracking/20250307_2_tracking.mp4
+2025-03-10 09:55:53,222 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,397 - INFO - Extracted 305 frames from 20250307_2_tracking.mp4 to ./image/20250307_2_tracking
+2025-03-10 09:55:53,397 - INFO - Attempting to open video: ./tracking/20250307_27_tracking.mp4
+2025-03-10 09:55:53,397 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,605 - INFO - Extracted 305 frames from 20250307_27_tracking.mp4 to ./image/20250307_27_tracking
+2025-03-10 09:55:53,605 - INFO - Attempting to open video: ./tracking/20250307_47_tracking.mp4
+2025-03-10 09:55:53,606 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,790 - INFO - Extracted 305 frames from 20250307_47_tracking.mp4 to ./image/20250307_47_tracking
+2025-03-10 09:55:53,791 - INFO - Attempting to open video: ./tracking/20250307_51_tracking.mp4
+2025-03-10 09:55:53,791 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:53,961 - INFO - Extracted 304 frames from 20250307_51_tracking.mp4 to ./image/20250307_51_tracking
+2025-03-10 09:55:53,961 - INFO - Attempting to open video: ./tracking/20250307_9_tracking.mp4
+2025-03-10 09:55:53,961 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:54,141 - INFO - Extracted 305 frames from 20250307_9_tracking.mp4 to ./image/20250307_9_tracking
+2025-03-10 09:55:54,141 - INFO - Attempting to open video: ./tracking/20250307_33_tracking.mp4
+2025-03-10 09:55:54,141 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:54,332 - INFO - Extracted 304 frames from 20250307_33_tracking.mp4 to ./image/20250307_33_tracking
+2025-03-10 09:55:54,333 - INFO - Attempting to open video: ./tracking/20250307_19_tracking.mp4
+2025-03-10 09:55:54,333 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:54,513 - INFO - Extracted 304 frames from 20250307_19_tracking.mp4 to ./image/20250307_19_tracking
+2025-03-10 09:55:54,513 - INFO - Attempting to open video: ./tracking/20250307_13_tracking.mp4
+2025-03-10 09:55:54,514 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:54,701 - INFO - Extracted 304 frames from 20250307_13_tracking.mp4 to ./image/20250307_13_tracking
+2025-03-10 09:55:54,701 - INFO - Attempting to open video: ./tracking/20250307_22_tracking.mp4
+2025-03-10 09:55:54,702 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:54,878 - INFO - Extracted 304 frames from 20250307_22_tracking.mp4 to ./image/20250307_22_tracking
+2025-03-10 09:55:54,878 - INFO - Attempting to open video: ./tracking/20250307_34_tracking.mp4
+2025-03-10 09:55:54,879 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,060 - INFO - Extracted 304 frames from 20250307_34_tracking.mp4 to ./image/20250307_34_tracking
+2025-03-10 09:55:55,060 - INFO - Attempting to open video: ./tracking/20250307_14_tracking.mp4
+2025-03-10 09:55:55,060 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,240 - INFO - Extracted 304 frames from 20250307_14_tracking.mp4 to ./image/20250307_14_tracking
+2025-03-10 09:55:55,241 - INFO - Attempting to open video: ./tracking/20250307_23_tracking.mp4
+2025-03-10 09:55:55,241 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,410 - INFO - Extracted 305 frames from 20250307_23_tracking.mp4 to ./image/20250307_23_tracking
+2025-03-10 09:55:55,410 - INFO - Attempting to open video: ./tracking/20250307_37_tracking.mp4
+2025-03-10 09:55:55,411 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,593 - INFO - Extracted 304 frames from 20250307_37_tracking.mp4 to ./image/20250307_37_tracking
+2025-03-10 09:55:55,593 - INFO - Attempting to open video: ./tracking/20250307_52_tracking.mp4
+2025-03-10 09:55:55,594 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,770 - INFO - Extracted 305 frames from 20250307_52_tracking.mp4 to ./image/20250307_52_tracking
+2025-03-10 09:55:55,770 - INFO - Attempting to open video: ./tracking/20250307_25_tracking.mp4
+2025-03-10 09:55:55,771 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:55,951 - INFO - Extracted 304 frames from 20250307_25_tracking.mp4 to ./image/20250307_25_tracking
+2025-03-10 09:55:55,951 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-10 09:55:55,952 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:56,139 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-10 09:55:56,140 - INFO - Attempting to open video: ./tracking/20250307_43_tracking.mp4
+2025-03-10 09:55:56,140 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:56,319 - INFO - Extracted 305 frames from 20250307_43_tracking.mp4 to ./image/20250307_43_tracking
+2025-03-10 09:55:56,319 - INFO - Attempting to open video: ./tracking/20250307_3_tracking.mp4
+2025-03-10 09:55:56,320 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:56,489 - INFO - Extracted 304 frames from 20250307_3_tracking.mp4 to ./image/20250307_3_tracking
+2025-03-10 09:55:56,489 - INFO - Attempting to open video: ./tracking/20250307_49_tracking.mp4
+2025-03-10 09:55:56,490 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:56,701 - INFO - Extracted 305 frames from 20250307_49_tracking.mp4 to ./image/20250307_49_tracking
+2025-03-10 09:55:56,701 - INFO - Attempting to open video: ./tracking/20250307_36_tracking.mp4
+2025-03-10 09:55:56,702 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:56,896 - INFO - Extracted 304 frames from 20250307_36_tracking.mp4 to ./image/20250307_36_tracking
+2025-03-10 09:55:56,896 - INFO - Attempting to open video: ./tracking/20250307_44_tracking.mp4
+2025-03-10 09:55:56,897 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,085 - INFO - Extracted 304 frames from 20250307_44_tracking.mp4 to ./image/20250307_44_tracking
+2025-03-10 09:55:57,085 - INFO - Attempting to open video: ./tracking/20250307_17_tracking.mp4
+2025-03-10 09:55:57,086 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,264 - INFO - Extracted 304 frames from 20250307_17_tracking.mp4 to ./image/20250307_17_tracking
+2025-03-10 09:55:57,264 - INFO - Attempting to open video: ./tracking/20250307_42_tracking.mp4
+2025-03-10 09:55:57,265 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,465 - INFO - Extracted 305 frames from 20250307_42_tracking.mp4 to ./image/20250307_42_tracking
+2025-03-10 09:55:57,465 - INFO - Attempting to open video: ./tracking/20250307_40_tracking.mp4
+2025-03-10 09:55:57,466 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,651 - INFO - Extracted 305 frames from 20250307_40_tracking.mp4 to ./image/20250307_40_tracking
+2025-03-10 09:55:57,651 - INFO - Attempting to open video: ./tracking/20250307_39_tracking.mp4
+2025-03-10 09:55:57,652 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,826 - INFO - Extracted 304 frames from 20250307_39_tracking.mp4 to ./image/20250307_39_tracking
+2025-03-10 09:55:57,827 - INFO - Attempting to open video: ./tracking/20250307_32_tracking.mp4
+2025-03-10 09:55:57,828 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:57,997 - INFO - Extracted 304 frames from 20250307_32_tracking.mp4 to ./image/20250307_32_tracking
+2025-03-10 09:55:57,997 - INFO - Attempting to open video: ./tracking/20250307_48_tracking.mp4
+2025-03-10 09:55:57,998 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:58,202 - INFO - Extracted 305 frames from 20250307_48_tracking.mp4 to ./image/20250307_48_tracking
+2025-03-10 09:55:58,202 - INFO - Attempting to open video: ./tracking/20250307_45_tracking.mp4
+2025-03-10 09:55:58,203 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:58,378 - INFO - Extracted 304 frames from 20250307_45_tracking.mp4 to ./image/20250307_45_tracking
+2025-03-10 09:55:58,378 - INFO - Attempting to open video: ./tracking/20250307_41_tracking.mp4
+2025-03-10 09:55:58,378 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:58,582 - INFO - Extracted 305 frames from 20250307_41_tracking.mp4 to ./image/20250307_41_tracking
+2025-03-10 09:55:58,583 - INFO - Attempting to open video: ./tracking/20250307_11_tracking.mp4
+2025-03-10 09:55:58,584 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:58,780 - INFO - Extracted 304 frames from 20250307_11_tracking.mp4 to ./image/20250307_11_tracking
+2025-03-10 09:55:58,780 - INFO - Attempting to open video: ./tracking/20250307_46_tracking.mp4
+2025-03-10 09:55:58,781 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:58,953 - INFO - Extracted 305 frames from 20250307_46_tracking.mp4 to ./image/20250307_46_tracking
+2025-03-10 09:55:58,954 - INFO - Attempting to open video: ./tracking/20250307_10_tracking.mp4
+2025-03-10 09:55:58,954 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:59,145 - INFO - Extracted 304 frames from 20250307_10_tracking.mp4 to ./image/20250307_10_tracking
+2025-03-10 09:55:59,146 - INFO - Attempting to open video: ./tracking/20250307_21_tracking.mp4
+2025-03-10 09:55:59,146 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:59,329 - INFO - Extracted 304 frames from 20250307_21_tracking.mp4 to ./image/20250307_21_tracking
+2025-03-10 09:55:59,329 - INFO - Attempting to open video: ./tracking/20250307_4_tracking.mp4
+2025-03-10 09:55:59,330 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:59,516 - INFO - Extracted 304 frames from 20250307_4_tracking.mp4 to ./image/20250307_4_tracking
+2025-03-10 09:55:59,517 - INFO - Attempting to open video: ./tracking/20250307_35_tracking.mp4
+2025-03-10 09:55:59,517 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:59,734 - INFO - Extracted 305 frames from 20250307_35_tracking.mp4 to ./image/20250307_35_tracking
+2025-03-10 09:55:59,734 - INFO - Attempting to open video: ./tracking/20250307_18_tracking.mp4
+2025-03-10 09:55:59,735 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:55:59,936 - INFO - Extracted 304 frames from 20250307_18_tracking.mp4 to ./image/20250307_18_tracking
+2025-03-10 09:55:59,936 - INFO - Attempting to open video: ./tracking/20250307_1_tracking.mp4
+2025-03-10 09:55:59,937 - INFO - Video info - Frames: 283, FPS: 30, Resolution: 490x454
+2025-03-10 09:56:00,315 - INFO - Extracted 283 frames from 20250307_1_tracking.mp4 to ./image/20250307_1_tracking
+2025-03-10 09:56:00,315 - INFO - Attempting to open video: ./tracking/20250307_50_tracking.mp4
+2025-03-10 09:56:00,316 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:56:00,517 - INFO - Extracted 305 frames from 20250307_50_tracking.mp4 to ./image/20250307_50_tracking
+2025-03-10 09:56:00,517 - INFO - Attempting to open video: ./tracking/20250307_7_tracking.mp4
+2025-03-10 09:56:00,518 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-10 09:56:00,730 - INFO - Extracted 304 frames from 20250307_7_tracking.mp4 to ./image/20250307_7_tracking
+2025-03-10 09:56:00,731 - INFO - Attempting to open video: ./tracking/20250307_24_tracking.mp4
+2025-03-10 09:56:00,731 - INFO - Video info - Frames: 305, FPS: 30, Resolution: 490x454
+2025-03-10 09:56:00,911 - INFO - Extracted 305 frames from 20250307_24_tracking.mp4 to ./image/20250307_24_tracking
+2025-03-10 09:56:00,911 - INFO - All videos processed successfully!
+2025-03-11 11:38:54,389 - INFO - Found 1 video files to process
+2025-03-11 11:38:54,389 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 11:38:54,391 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 11:38:54,588 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 11:38:54,588 - INFO - All videos processed successfully!
+2025-03-11 11:42:29,767 - INFO - Found 1 video files to process
+2025-03-11 11:42:29,767 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 11:42:29,769 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 11:42:29,963 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 11:42:29,963 - INFO - All videos processed successfully!
+2025-03-11 11:45:00,972 - INFO - Found 2 video files to process
+2025-03-11 11:45:00,972 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 11:45:00,976 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 11:45:01,173 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 11:45:01,173 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-11 11:45:01,173 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 11:45:01,350 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-11 11:45:01,350 - INFO - All videos processed successfully!
+2025-03-11 13:52:45,157 - INFO - Found 3 video files to process
+2025-03-11 13:52:45,157 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 13:52:45,159 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:52:45,383 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 13:52:45,383 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-11 13:52:45,384 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:52:45,560 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-11 13:52:45,560 - INFO - Attempting to open video: ./tracking/20250307_7_tracking.mp4
+2025-03-11 13:52:45,561 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:52:45,778 - INFO - Extracted 304 frames from 20250307_7_tracking.mp4 to ./image/20250307_7_tracking
+2025-03-11 13:52:45,778 - INFO - All videos processed successfully!
+2025-03-11 13:54:44,573 - INFO - Found 3 video files to process
+2025-03-11 13:54:44,573 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 13:54:44,575 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:54:44,776 - INFO - Extracted 304 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 13:54:44,776 - INFO - Attempting to open video: ./tracking/20250307_15_tracking.mp4
+2025-03-11 13:54:44,777 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:54:44,949 - INFO - Extracted 304 frames from 20250307_15_tracking.mp4 to ./image/20250307_15_tracking
+2025-03-11 13:54:44,950 - INFO - Attempting to open video: ./tracking/20250307_7_tracking.mp4
+2025-03-11 13:54:44,950 - INFO - Video info - Frames: 304, FPS: 30, Resolution: 490x454
+2025-03-11 13:54:45,123 - INFO - Extracted 304 frames from 20250307_7_tracking.mp4 to ./image/20250307_7_tracking
+2025-03-11 13:54:45,123 - INFO - All videos processed successfully!
+2025-03-11 15:27:00,470 - INFO - Found 1 video files to process
+2025-03-11 15:27:00,471 - INFO - Attempting to open video: ./tracking/20250307_12_tracking.mp4
+2025-03-11 15:27:00,472 - INFO - Video info - Frames: 82, FPS: 30, Resolution: 490x454
+2025-03-11 15:27:00,543 - INFO - Extracted 82 frames from 20250307_12_tracking.mp4 to ./image/20250307_12_tracking
+2025-03-11 15:27:00,543 - INFO - All videos processed successfully!
