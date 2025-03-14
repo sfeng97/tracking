@@ -162,13 +162,16 @@ def tracking(input_video, output_video):
                              trackcolor[closest % len(trackcolor)], 2)
                 for d in [result_dir+f"/{tracklist[closest][5]}"]:
                     os.makedirs(d, exist_ok=True)
+                if xy[0]>460 or xy[0]<10 or xy[1]>450 or xy[1]<10:
+                    continue
+                    
                 x, y = int(round(xy[0])), int(round(xy[1]))
                 x1, y1 = max(0,x-30), max(0,y-30)
                 x2, y2 = min(frame.shape[1],x+30), min(frame.shape[0],y+30)
                 cv2.imwrite(os.path.join(result_dir, 
                                     f"{tracklist[closest][5]}/{frame_count}_{xy}_area({current_area}).jpg"), 
                             frame[y1:y2, x1:x2])
-
+        
         save_dir = effect_image
         cv2.imwrite(os.path.join(save_dir, f'frame_{frame_count:04d}.jpg'), frame)
         cv2.imshow('Frame', frame)
