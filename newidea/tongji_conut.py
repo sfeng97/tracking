@@ -52,17 +52,17 @@ class FolderProcessor:
         os.makedirs(abnormal_dir, exist_ok=True)
 
         # 移动异常文件
-        for path, area in file_info:
-            if self.is_abnormal(area, mean, std):
-                self.move_abnormal_file(path, abnormal_dir, abnormal_files)
+        # for path, area in file_info:
+        #     if self.is_abnormal(area, mean, std):
+        #         self.move_abnormal_file(path, abnormal_dir, abnormal_files)
 
-        # 删除原始异常文件
-        for file_path in abnormal_files:
-            try:
-                os.remove(file_path)
-                # print(f"已删除异常文件: {file_path}")
-            except OSError as e:
-                print(f"无法删除文件 {file_path}: {e.strerror}")
+        # # 删除原始异常文件
+        # for file_path in abnormal_files:
+        #     try:
+        #         os.remove(file_path)
+        #         # print(f"已删除异常文件: {file_path}")
+        #     except OSError as e:
+        #         print(f"无法删除文件 {file_path}: {e.strerror}")
         # 跳过无效文件夹
         if len(file_path) < 6:
             print(f"跳过 {file_path}（剩余数据不足）")
@@ -186,7 +186,7 @@ class FolderProcessor:
         return float(match.group(1)) if match else None
 
     @staticmethod
-    def is_abnormal(value, mean, std, sigma=1.5):
+    def is_abnormal(value, mean, std, sigma=1):
         """异常检测"""
         if std == 0:
             return False
