@@ -59,10 +59,9 @@ class FolderProcessor:
         else:
             self.obstruction = None  # 或设置为默认值
         # 跳过无效文件夹
-        if len(area_data) < 6:
+        if len(area_data) < 6 :
             print(f"跳过 {folder_path}（数据不足）")
             return
-
         # 处理异常文件
         mean = np.mean(area_data)
         std = np.std(area_data)
@@ -137,7 +136,19 @@ class FolderProcessor:
                 self.block_num+=2  
                 self.handle_files(folder_path, remaining_files, single_entries.keys())
                 marker = "两个积木" 
-            
+                
+        elif self.obstruction==mapped_state[2]:#duo一 
+            self.block_num+=1
+            # if counts['multiple_count4'] !=0:
+            #     self.block_num+=4        
+            #     marker = "四个积木"
+            # elif  counts['multiple_count3'] !=0:
+            #     self.block_num+=3
+            #     marker = "三个积木"
+            # elif counts['multiple_count2'] !=0:
+            #     self.block_num+=2  
+            #     marker = "两个积木" 
+                
         # 记录标记结果
         self.folder_markers[folder_path] = marker
         # print(f"\n{folder_path} 标记为：{marker}")

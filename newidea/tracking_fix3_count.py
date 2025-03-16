@@ -45,12 +45,11 @@ def tracking(input_video, output_video):
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_video, fourcc, fps, (roi_x2-roi_x1, roi_y2-roi_y1), isColor=True)
     mapped_state = {
-        0: 'state1',  # 将 'state1' 映射到列表中的第一个元素（索引0）
-        1: 'state2',  # 将 'state2' 映射到列表中的第二个元素（索引1）
-        2: 'state3'   # 将 'state3' 映射到列表中的第三个元素（索引2）
+        0: 'state1',  # 无遮挡
+        1: 'state2',  # 一分多
+        2: 'state3'   # 多合一
     }
 
- 
     tracklist = []  
     trackcolor = [
         (255, 0, 0), (0, 255, 0), (0, 0, 255),(255, 255, 0), (0, 255, 255), (255, 0, 255),
@@ -120,7 +119,7 @@ def tracking(input_video, output_video):
         max_area = np.max(contour_areas) if contour_areas else 0
 
         tracklist = [ (t[0], t[1], t[2], t[3]+1, t[4],t[5],t[6]) for t in tracklist ]
-       # obstructed_situation: int = 0 #0:无遮挡 1：1分多 2：多合1
+
         if not tracklist:
             for (xy, area) in xy_areas:
                 tracklist.append((xy, (0, 0), 1, 0, area,0,mapped_state[0]))
@@ -174,6 +173,7 @@ def tracking(input_video, output_video):
                         dis_list.append(closest)
                 
                 else:
+                    
                     dis_list.append(closest)
                     motion = (xy[0] - tracklist[closest][0][0], 
                             xy[1] - tracklist[closest][0][1])
@@ -187,7 +187,7 @@ def tracking(input_video, output_video):
                 element_positions = []
                 for index, element in enumerate(dis_list):
                     if element in element_positions:
-                        if element == closest:
+                        if element == closest: #1分2情况，在中间多出来个积木，标定这个积木是1分2
                             new_tuple = (
                                 tracklist[closest][0],  # xy
                                 tracklist[closest][1],  # motion
@@ -207,6 +207,7 @@ def tracking(input_video, output_video):
                 cv2.imwrite(os.path.join(result_dir, 
                                     f"{tracklist[closest][5]}/{frame_count}_{xy}_area({current_area})_obstruct({tracklist[closest][6]}).jpg"), 
                             frame[y1:y2, x1:x2])
+            
 
         save_dir = effect_image
         cv2.imwrite(os.path.join(save_dir, f'frame_{frame_count:04d}.jpg'), frame)
@@ -221,7 +222,31 @@ def tracking(input_video, output_video):
             block.counter += tracklist[j][2]
         if block.counter>=8:
             block_num+=1
-    
+    for i, trackitem in enumerate(tracklist):
+        if trackitem[3]!=0 and trackitem[0][0]>50 and trackitem[6]!=mapped_state[1]:#多合一
+
+            new_tuple = (
+                tracklist[i][0],  # xy
+                tracklist[i][1],  # motion
+                tracklist[i][2],  # 连续帧
+                tracklist[i][3],  # 失帧数
+                tracklist[i][4],  # current_area
+                tracklist[i][5],  # 积木类别
+                mapped_state[2]         # 遮挡类别 
+            )
+            tracklist[i]=new_tuple
+            
+            print(result_dir, f"{trackitem[5]}/{frame_count}_{xy}_area({4})_obstruct({tracklist[i][6]}).jpg")
+            x, y = int(round(xy[0])), int(round(xy[1]))
+            x1, y1 = max(0,x-30), max(0,y-30)
+            x2, y2 = min(640,x+30), min(480,y+30)
+            width, height = 640, 480
+            color = (255, 255, 255)  # 白色 (B, G, R)
+            blank_image = np.full((height, width, 3), color, dtype=np.uint8)
+            cv2.imwrite(os.path.join(result_dir, 
+                                f"{trackitem[5]}/{frame_count}_{xy}_area({4})_obstruct({tracklist[i][6]}).jpg",),
+                        blank_image[y1:y2, x1:x2])
+            
     logger.info(f"block_num={block_num}")
     cap.release()
     out.release()
